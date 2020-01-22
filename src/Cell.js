@@ -7,8 +7,6 @@ export default class Cell extends Component {
     this.state = {
       color: props.value
     }
-    
-    //this.handleClick = this.handleClick.bind(this)
   }
   
   handleClick = () => {
@@ -22,7 +20,7 @@ export default class Cell extends Component {
       <div 
         className="cell"
         style={{backgroundColor: this.state.color}}
-        onClick={e => this.handleClick()}>
+        onClick={this.handleClick}>
       </div>
     )
   }
