@@ -18,7 +18,7 @@ export default class Cell extends Component {
           <div 
           className="cell" 
           style={{backgroundColor:this.state.color}} 
-          onClick={e => this.setState({color: '#333'})}>
+          onClick={e => {this.setState({color: '#333'})}}>
           </div>)
     }
 }
