@@ -8,10 +8,10 @@ export default class Cell extends Component {
       color: props.value
     }
     
-    this.handleClick = this.handleClick.bind(this)
+    //this.handleClick = this.handleClick.bind(this)
   }
   
-  handleClick() {
+  handleClick = () => {
     this.setState({
       color: '#333'
     })
