@@ -9,7 +9,7 @@ export default class Cell extends Component {
     }
     
     clickListener = () => {
-      this.setState({color: '#333'})
+      
     }  
 
 
@@ -18,7 +18,7 @@ export default class Cell extends Component {
           <div 
           className="cell" 
           style={{backgroundColor:this.state.color}} 
-          onClick={this.clickListener}>
+          onClick={this.clickListenere => this.setState({color: '#333'})}>
           </div>)
     }
 }
